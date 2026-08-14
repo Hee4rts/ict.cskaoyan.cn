@@ -1,0 +1,10 @@
+{
+  "default": "2026",
+  "years": [
+    {
+      "year": "2026",
+      "label": "2026 年",
+      "source": "admission-2026.json"
+    }
+  ]
+}

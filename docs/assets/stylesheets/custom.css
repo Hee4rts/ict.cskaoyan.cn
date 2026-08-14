@@ -741,3 +741,219 @@ body {
     transition: none;
   }
 }
+
+/* Admission data explorer */
+.admission-explorer {
+  --admission-surface: #f7f8fa;
+  --admission-cell: #ffffff;
+  --admission-border: rgba(29, 39, 52, 0.14);
+  --admission-head: #1b222d;
+  --admission-head-text: #eef2f6;
+  margin: 1.2rem 0 1.8rem;
+}
+
+[data-md-color-scheme="slate"] .admission-explorer {
+  --admission-surface: #151a22;
+  --admission-cell: #1a202a;
+  --admission-border: rgba(222, 230, 239, 0.12);
+  --admission-head: #252d39;
+  --admission-head-text: #e7ebf0;
+}
+
+.admission-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--admission-border);
+  border-bottom: 0;
+  border-radius: 0.45rem 0.45rem 0 0;
+  background: var(--admission-surface);
+}
+
+.admission-toolbar label {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.admission-toolbar select {
+  min-width: 7rem;
+  padding: 0.42rem 1.8rem 0.42rem 0.65rem;
+  border: 1px solid var(--admission-border);
+  border-radius: 0.3rem;
+  background: var(--admission-cell);
+  color: inherit;
+  font: inherit;
+  font-size: 0.68rem;
+}
+
+.admission-count {
+  margin-left: auto;
+  color: var(--ict-muted);
+  font-size: 0.62rem;
+}
+
+.admission-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1rem;
+  padding: 0.58rem 0.9rem;
+  border-inline: 1px solid var(--admission-border);
+  background: var(--admission-surface);
+  color: var(--ict-muted);
+  font-size: 0.58rem;
+}
+
+.admission-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+}
+
+.admission-legend i {
+  width: 0.55rem;
+  height: 0.55rem;
+  border: 1px solid var(--admission-border);
+  border-radius: 0.12rem;
+}
+
+.admission-legend .is-unadmitted { background: rgba(223, 190, 71, 0.58); }
+.admission-legend .is-institute { background: rgba(116, 158, 196, 0.34); }
+.admission-legend .is-withdrawn { background: rgba(164, 116, 190, 0.42); }
+.admission-legend .is-transfer { background: rgba(105, 168, 106, 0.48); }
+
+.admission-table-scroll {
+  max-height: min(72vh, 48rem);
+  overflow: auto;
+  border: 1px solid var(--admission-border);
+  background: var(--admission-cell);
+  scrollbar-color: var(--ict-blue) var(--admission-surface);
+  scrollbar-width: thin;
+}
+
+.admission-table-scroll:focus-visible {
+  outline: 2px solid var(--ict-blue);
+  outline-offset: 2px;
+}
+
+.admission-table-scroll::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.admission-table-scroll::-webkit-scrollbar-track {
+  background: var(--admission-surface);
+}
+
+.admission-table-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--ict-blue);
+}
+
+.admission-table {
+  width: max-content;
+  min-width: 100%;
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.63rem;
+  line-height: 1.4;
+}
+
+.admission-table th,
+.admission-table td {
+  box-sizing: border-box;
+  padding: 0.52rem 0.62rem;
+  border-right: 1px solid var(--admission-border);
+  border-bottom: 1px solid var(--admission-border);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.admission-table th {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  background: var(--admission-head);
+  color: var(--admission-head-text);
+  font-weight: 700;
+}
+
+.admission-table th:first-child {
+  z-index: 4;
+  left: 0;
+}
+
+.admission-table td {
+  background: var(--admission-cell);
+}
+
+.admission-table td:first-child {
+  position: sticky;
+  z-index: 2;
+  left: 0;
+  min-width: 9.5rem;
+  font-weight: 650;
+}
+
+.admission-table th:nth-child(n + 2):nth-child(-n + 5),
+.admission-table td:nth-child(n + 2):nth-child(-n + 5) {
+  min-width: 4rem;
+}
+
+.admission-table th:nth-child(6),
+.admission-table td:nth-child(6) { min-width: 5rem; }
+.admission-table th:nth-child(7),
+.admission-table td:nth-child(7) { min-width: 8rem; }
+.admission-table th:nth-child(8),
+.admission-table td:nth-child(8),
+.admission-table th:nth-child(9),
+.admission-table td:nth-child(9) { min-width: 12rem; }
+.admission-table th:nth-child(10),
+.admission-table td:nth-child(10) { min-width: 6rem; }
+.admission-table th:nth-child(11),
+.admission-table td:nth-child(11),
+.admission-table th:nth-child(12),
+.admission-table td:nth-child(12) { min-width: 4rem; }
+
+.admission-table .admission-row--unadmitted td {
+  background: rgba(223, 190, 71, 0.28);
+}
+
+.admission-table .admission-row--institute td {
+  background: rgba(116, 158, 196, 0.18);
+}
+
+.admission-table .admission-row--withdrawn td {
+  background: rgba(164, 116, 190, 0.26);
+}
+
+.admission-table .admission-row--transfer td {
+  background: rgba(105, 168, 106, 0.28);
+}
+
+.admission-scroll-hint {
+  margin: 0.45rem 0 0;
+  color: var(--ict-muted);
+  font-size: 0.58rem;
+  text-align: right;
+}
+
+.admission-explorer.has-error .admission-count {
+  color: #c66f73;
+}
+
+@media (max-width: 640px) {
+  .admission-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .admission-count {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .admission-table-scroll {
+    max-height: 65vh;
+  }
+}
