@@ -70,11 +70,11 @@ hide:
       </div>
       <b>↗</b>
     </a>
-    <a class="ict-card card-gold" href="培养与生活/研究方向与实验室/">
+    <a class="ict-card card-gold" href="研究方向与实验室/">
       <span class="card-no">C / 03</span>
       <div>
         <p>RESEARCH</p>
-        <h3>培养与生活</h3>
+        <h3>研究方向与实验室</h3>
         <span>研究方向、实验室、培养体验</span>
       </div>
       <b>↗</b>
