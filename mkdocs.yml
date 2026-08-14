@@ -1,0 +1,87 @@
+site_name: 中国科学院计算技术研究所报考指南
+site_description: 非官方公益计算所考研信息整理，汇总报考、初试、复试、培养与经验信息
+site_url: https://hee4rts.github.io/ict.cskaoyan.cn/
+repo_url: https://github.com/Hee4rts/ict.cskaoyan.cn
+repo_name: Hee4rts/ict.cskaoyan.cn
+edit_uri: edit/main/docs/
+use_directory_urls: true
+
+theme:
+  name: material
+  language: zh
+  font: false
+  icon:
+    logo: material/memory
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: 切换深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: 切换浅色模式
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - assets/stylesheets/custom.css
+
+nav:
+  - 首页: index.md
+  - 报考信息:
+      - 招生简章: 报考信息/招生简章.md
+      - 招生专业: 报考信息/招生专业.md
+      - 初试科目: 报考信息/初试科目.md
+  - 复试准备:
+      - 复试规则: 复试准备/复试规则.md
+      - 历年复试线: 复试准备/历年复试线.md
+      - 录取数据: 复试准备/录取数据.md
+  - 培养与生活:
+      - 研究方向与实验室: 培养与生活/研究方向与实验室.md
+  - 经验分享: 经验分享/index.md
+  - 关于:
+      - 免责声明: 关于/免责声明.md
+
+extra:
+  generator: false
+  social:
+    - icon: material/web
+      name: 中国科学院计算技术研究所
+      link: https://www.ict.ac.cn/
+    - icon: material/school
+      name: 中国科学院大学招生信息网
+      link: https://admission.ucas.ac.cn/
+
+copyright: 非官方公益指南 · 内容仅供参考，请以计算所及国科大官方发布为准
