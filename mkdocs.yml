@@ -60,6 +60,7 @@ extra_css:
 
 extra_javascript:
   - assets/javascripts/admission-table.js
+  - assets/javascripts/homepage.js
 
 nav:
   - 首页: index.md
