@@ -1,6 +1,6 @@
 # 经验分享
 
-## 2026 年
+## 2026 
 
 - [[计算所]26考研11408京区384分经验/警示贴 →](https://zhuanlan.zhihu.com/p/2022337863501583776){ target="_blank" rel="noopener noreferrer" } · 知乎
 - [26二战考研 计算所考研 京区11408 382 经验or推荐 →](https://zhuanlan.zhihu.com/p/2024058898441676468){ target="_blank" rel="noopener noreferrer" } · 知乎
