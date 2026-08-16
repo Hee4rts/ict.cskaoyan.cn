@@ -4,7 +4,7 @@
 
 网站使用 MkDocs Material 构建，并通过 GitHub Actions 自动发布到 GitHub Pages：
 
-- 网站地址：<https://hee4rts.github.io/ict.cskaoyan.cn/>
+- 网站地址：<https://ict.cskaoyan.cn/>
 - 官方招生信息：<https://www.ict.ac.cn/yjsjy/zsxx/>
 
 ## 本地预览
