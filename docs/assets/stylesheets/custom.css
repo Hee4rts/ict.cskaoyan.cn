@@ -2531,6 +2531,37 @@ body {
   color: #c66f73;
 }
 
+.ict-comments {
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3.5rem;
+  border-top: 1px solid var(--ict-line);
+}
+
+.ict-comments__head {
+  margin-bottom: 1.5rem;
+}
+
+.ict-comments__head h2 {
+  margin: 0.3rem 0 0.45rem;
+  color: var(--ict-ink);
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
+  letter-spacing: -0.04em;
+}
+
+.ict-comments__head p {
+  max-width: 38rem;
+  margin: 0;
+  color: var(--ict-muted);
+  font-size: 0.72rem;
+  line-height: 1.75;
+}
+
+.ict-comments .giscus,
+.ict-comments .giscus-frame {
+  width: 100%;
+}
+
 @media (max-width: 640px) {
   .admission-toolbar {
     flex-wrap: wrap;

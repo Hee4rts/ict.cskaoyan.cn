@@ -342,5 +342,29 @@ hide:
       <p>招生政策、专业目录与录取数据可能随年份调整，请始终以计算所及中国科学院大学最新公告为准。</p>
       <a href="关于/免责声明/">阅读免责声明 <span aria-hidden="true">→</span></a>
     </aside>
+
+    <section class="ict-comments ict-shell" aria-labelledby="comments-title">
+      <header class="ict-comments__head">
+        <span class="ict-kicker">DISCUSSION</span>
+        <h2 id="comments-title">评论与留言</h2>
+        <p>欢迎交流报考信息与网站建议。请勿发布个人隐私、未经证实的信息或违规资料。</p>
+      </header>
+      <script src="https://giscus.app/client.js"
+              data-repo="Hee4rts/ict.cskaoyan.cn"
+              data-repo-id="R_kgDOT4VRfA"
+              data-category="Announcements"
+              data-category-id="DIC_kwDOT4VRfM4DDgnj"
+              data-mapping="pathname"
+              data-strict="1"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="top"
+              data-theme="preferred_color_scheme"
+              data-lang="zh-CN"
+              data-loading="lazy"
+              crossorigin="anonymous"
+              async>
+      </script>
+    </section>
   </div>
 </div>
